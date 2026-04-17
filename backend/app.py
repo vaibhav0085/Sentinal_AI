@@ -34,7 +34,7 @@ except FileNotFoundError as e:
 
 @app.route('/')
 def home():
-    return app.send_static_file('dashboard.html')
+    return app.send_static_file('index.html')
 
 @app.route('/info', methods=['GET'])
 def get_model_info():
